@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Course: CIS133DA - Web Development and Internet Technologies
+        Lesson: Lesson 5 Project
+        Author: Emerson Nöel Pereira
+        Date: October 2026
+        Description: Demonstrating inline CSS styles including color methods, font families, and font shorthand properties.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emerson Nöel Pereira">
+    <meta name="keywords" content="CSS, Inline CSS, Web Development, Fonts, Colors, HTML5, Rio Salado">
+    <meta name="description" content="A demonstration page for Lesson 5 showcasing inline CSS styles, font family fallbacks, color specification methods, and font shorthand properties.">
+    <title>Emerson's Inline CSS Page</title>
+</head>
+<body>
+
+    <!-- Part 2, Step 1: Center aligns all elements within the header using least inline styles -->
+    <header style="text-align: center;">
+        
+        <!-- Part 2, Step 3: Explanation if the first font listed is unavailable -->
+        <!-- If the first font (Arial) is not installed on the user's device, the browser will attempt to load the second font (Helvetica), and finally fall back to the generic 'sans-serif' family. -->
+        
+        <!-- Part 2, Step 2: Declaration block with Hex color (#2C3E50), absolute font size (32px), and font family -->
+        <h1 style="color: #2C3E50; font-size: 32px; font-family: Arial, Helvetica, sans-serif;">Applying Inline CSS</h1>
+
+        <!-- Part 2, Step 5: Identifies three types of values for font-weight -->
+        <!-- Font-weight values can be defined using: 1) Keywords (e.g., bold, normal), 2) Numeric values (e.g., 400, 700), or 3) Relative keywords (e.g., bolder, lighter). -->
+
+        <!-- Part 2, Step 4: Inspirational quote from Lesson 4 made bold using inline CSS -->
+        <p style="font-weight: bold;">"The only way to do great work is to love what you do." - Steve Jobs</p>
+
+        <!-- Part 1, Step 7: Commented out NAV element -->
+        <!-- 
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        -->
+    </header>
+
+    <main>
+        <!-- Part 2, Step 6a: First heading styled with Color Name method (DarkCyan) -->
+        <h2 style="color: DarkCyan;">Understanding Generic Font Families</h2> Generic Font Families</h2>
+
+        <!-- Part 2, Step 7: Font shorthand with relative size (1.1em) and sans-serif font family -->
+        <p style="font: 1.1em Helvetica, Arial, sans-serif;">
+            Generic font families act as fallback categories in CSS when specific fonts are unavailable. <strong>Serif</strong> fonts include small decorative strokes (serifs) at the ends of character letters, making them ideal for traditional print. <strong>Sans-serif</strong> fonts lack these strokes, providing a clean and modern aesthetic that is easier to read on digital screens. <strong>Monospace</strong> fonts assign equal width to every character, making them perfect for code display, while <strong>Cursive</strong> simulates human handwriting and <strong>Fantasy</strong> includes decorative, stylized lettering.
+        </p>
+
+        <!-- Part 2, Step 6b: Second heading styled with RGB method (rgb(142, 68, 173)) -->
+        <h2 style="color: rgb(142, 68, 173);">Methods for Specifying Web Colors</h2>
+
+        <!-- Part 2, Step 8: Font shorthand with font-style (italic), pixel size (18px), and monospace font family -->
+        <p style="font: italic 18px 'Courier New', Courier, monospace;">
+            CSS offers multiple ways to apply color to web elements and text. <strong>Color Names</strong> allow developers to use predefined keywords like <code>lime</code> or <code>navy</code> for simple styling. The <strong>Hexadecimal (Hex)</strong> method uses six-digit hexadecimal codes representing RGB intensities (e.g., <code>#FF5733</code>), offering over 16 million precise colors. The <strong>RGB</strong> model specifies red, green, and blue values from 0 to 255 (e.g., <code>rgb(255, 99, 71)</code>), while <strong>RGBA</strong> adds an alpha channel to control color opacity and transparency.
+        </p>
+    </main>
+
+    <!-- Part 2, Step 9: Right aligns all elements within the footer using minimal inline styles -->
+    <footer style="text-align: right;">
+<p>&copy; 2026 Emerson Nöel Pereira. All rights reserved.</p>    </footer>
+
+</body>
+</html>
